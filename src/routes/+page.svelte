@@ -5,6 +5,7 @@
   import TechStack from '$lib/Components/TechStack.svelte';
   import Projects from "$lib/Components/Project.svelte";
   import Contact from '$lib/Components/Contact.svelte';
+  import MusicToggle from "$lib/Components/MusicToggle.svelte";
 </script>
 
 <main>
@@ -14,4 +15,5 @@
   <TechStack />
   <Projects />
   <Contact />
+  <MusicToggle />
 </main>

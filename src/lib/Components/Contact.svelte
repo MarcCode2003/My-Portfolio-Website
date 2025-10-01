@@ -4,7 +4,7 @@
 
   function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-      notification = "✅ Copied to clipboard!";
+      notification = "Copied to clipboard!";
       showNotification = true;
       setTimeout(() => {
         showNotification = false;
@@ -15,7 +15,7 @@
 
 <section class="py-20 bg-gradient-to-b from-gray-900 to-black text-white" id="contact">
   <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-4xl font-bold mb-10 text-center">📬 Contact Me</h2>
+    <h2 class="text-4xl font-bold mb-10 text-center">Contact Me</h2>
 
     <div class="grid md:grid-cols-2 gap-6">
 
