@@ -4,7 +4,7 @@
 
   function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-      notification = "Copied to clipboard!";
+      notification = "✅ Copied to clipboard!";
       showNotification = true;
       setTimeout(() => {
         showNotification = false;
@@ -102,6 +102,10 @@
           <p class="text-sm text-gray-400">marcsamuelcanales.26@gmail.com</p>
         </div>
         <div class="flex space-x-2">
+          <a href="mailto:marcsamuelcanales.26@gmail.com"
+            class="px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition text-sm">
+            Compose
+          </a>
           <button 
             class="px-3 py-2 text-sm border border-gray-600 rounded-lg hover:bg-gray-700 transition" 
             on:click={() => copyToClipboard('marcsamuelcanales.26@gmail.com')}>
@@ -127,7 +131,7 @@
 
   <!-- Toast Notification -->
   {#if showNotification}
-    <div class="fixed top-6 right-6 bg-white/10 backdrop-blur-lg text-white border border-white/20 px-4 py-2 rounded-lg shadow-xl animate-fade-in">
+    <div class="fixed top-6 left-6 bg-white/10 backdrop-blur-lg text-white border border-white/20 px-4 py-2 rounded-lg shadow-xl animate-fade-in">
       {notification}
     </div>
   {/if}
@@ -135,8 +139,8 @@
 
 <style>
   @keyframes fade-in {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
   }
   .animate-fade-in {
     animation: fade-in 0.3s ease-out;
