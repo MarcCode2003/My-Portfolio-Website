@@ -6,6 +6,7 @@
   import Projects from "$lib/Components/Project.svelte";
   import Contact from '$lib/Components/Contact.svelte';
   import MusicToggle from "$lib/Components/MusicToggle.svelte";
+  import Resume from "$lib/Components/Resume.svelte";
 </script>
 
 <main>
@@ -15,5 +16,6 @@
   <TechStack />
   <Projects />
   <Contact />
+  <Resume />
   <MusicToggle />
 </main>

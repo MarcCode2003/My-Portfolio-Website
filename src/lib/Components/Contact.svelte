@@ -102,7 +102,7 @@
           <p class="text-sm text-gray-400">marcsamuelcanales.26@gmail.com</p>
         </div>
         <div class="flex space-x-2">
-          <a href="mailto:marcsamuelcanales.26@gmail.com"
+          <a href="https://mail.google.com/" target="_blank" 
             class="px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition text-sm">
             Compose
           </a>
